@@ -30,6 +30,7 @@
         <module>BCUassistantV2-common-sensitive</module>
         <module>BCUassistantV2-common-redis</module>
         <module>BCUassistantV2-common-log</module>
+        <module>BCUassistantV2-common-chat</module>
     </modules>
 
     <dependencies>

@@ -6,7 +6,7 @@
     <artifactId>BCUassistantV2-modules-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>BCUassistantV2-modules-api</name>
-    <description>BCUassistanV2t-modules-api</description>
+    <description>BCUassistanV2-modules-api</description>
     <properties>
         <java.version>17</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -15,13 +15,14 @@
     </properties>
     <parent>
         <groupId>com.dicon.bcu</groupId>
-        <artifactId>BCUassistantV2-modules</artifactId>
+        <artifactId>BCUassistantV2</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../BCUassistantV2-modules/pom.xml</relativePath>
     </parent>
     <packaging>pom</packaging>
     <modules>
         <module>BCUassistantV2-system-api</module>
+        <module>BCUassistantV2-knowledge-api</module>
+        <module>BCUassistantV2-chat-api</module>
     </modules>
     <dependencies>
         <dependency>
@@ -44,7 +45,14 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-        </dependencies>
+
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+        </dependencies>            <!-- 其他公共依赖 -->
     </dependencyManagement>
 
     <build>
